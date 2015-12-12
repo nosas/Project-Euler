@@ -1,3 +1,8 @@
+"""
+By considering the terms in the Fibonacci sequence whose values do not exceed four million,
+find the sum of the even-valued terms.
+"""
+
 fib = [0, 1]
 max_value = 4000000
 
