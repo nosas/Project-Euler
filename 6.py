@@ -8,16 +8,23 @@ Find the difference between the sum of the squares of the first one hundred natu
 """
 
 
+# Create a num_range from 1 -> max_num
+# Create a list with each number in num_range squared
+# Return the sum of the list of squared numbers
 def sum_of_squares(max_num):
     num_range = range(1, max_num + 1)
     squares_list = [num**2 for num in num_range]
     return sum(squares_list)
 
 
+# Create a num_range from 1 -> max_num
+# Sum all the numbers in the range
+# Return the sum squared
 def square_of_sum(max_num):
     num_range = range(1, max_num + 1)
-    sum_num = sum(num_range)**2
-    return sum_num
+    sum_num = sum(num_range)
+    return sum_num**2
+
 
 natural_num = 100
 sum_10 = sum_of_squares(natural_num)
